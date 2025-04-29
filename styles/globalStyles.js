@@ -55,7 +55,7 @@ const GlobalStyles = createGlobalStyle`
     color:            var(--text-color);
     border-radius:    15px;
     font-weight:      bold;
-    border:           1px solid var(--text-color);
+    // border:           1px solid var(--text-color);
     text-decoration:  none;
     padding:          6px 10px;
     cursor: none;

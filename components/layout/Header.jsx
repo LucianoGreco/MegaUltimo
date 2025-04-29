@@ -50,7 +50,7 @@ const Header = () => {
 const HeaderContainer = styled.header`
   width: 95vw;
   height: 25vh;
-  border: 1px solid var(--text-color);
+  border: 2px solid var(--text-color);
   border-radius: 50px;
   display: flex;
   justify-content: space-around;
@@ -70,10 +70,14 @@ const ContainerLogo = styled.div`
   border-radius: 100%;
   backdrop-filter: blur(0px);
 
-  a {
+  a{
     text-shadow: none !important; /* Sobrescribe el sombreado del globalStyle */
     background: var(--blackground-color); 
     border: 0;
+  }
+  :hover {
+    transform: scale(1.05); /* Aumenta un poquito */
+    background: var(--blackground-color); 
   }
 `;
 
