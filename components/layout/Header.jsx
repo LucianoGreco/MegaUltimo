@@ -37,33 +37,64 @@ const Header = () => {
 
   return (
     <HeaderContainer isVisible={isVisible}>
-      <Link to="/">
-        <Logo src={data.logo} alt="Logo de Mega Madera" />
-      </Link>
+      <ContainerLogo>
+        <Link to="/">
+          <Logo src={data.logo} alt="Logo de Mega Madera" />
+        </Link>
+      </ContainerLogo>
       <Navbar />
     </HeaderContainer>
   );
 };
 
 const HeaderContainer = styled.header`
-  width: 100vw;
-  height: 18vh;
-  padding: 0 5px;
+  width: 95vw;
+  height: 25vh;
+  border: 1px solid var(--text-color);
+  border-radius: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   z-index: 10;
   position: fixed;
+  margin: 10px;
   top: 0;
   left: 0;
+  background: var(--blackground-color);
   transition: transform 0.3s ease-in-out;
-  transform: ${({ isVisible }) => (isVisible ? "translateY(0)" : "translateY(-100%)")};
+  transform: ${({ isVisible }) =>
+    isVisible ? "translateY(0)" : "translateY(-100%)"};
 `;
+
+const ContainerLogo = styled.div`
+  border-radius: 100%;
+  backdrop-filter: blur(0px);
+
+  a {
+    text-shadow: none !important; /* Sobrescribe el sombreado del globalStyle */
+    background: var(--blackground-color); 
+    border: 0;
+  }
+`;
+
+
 
 const Logo = styled.img`
+  width: 80px;
+  padding: 0;
+  text-shadow: none !important;
+  transition: transform 0.2s ease;
 
-  height: 50px;
-  width: 100px;
+  &:hover {
+    transform: scale(1.05); /* Aumenta un poquito */
+    background: var(--blackground-color); 
+  }
+
+  &:active {
+    transform: scale(0.95); /* Disminuye un poco menos del estado inicial */
+  }
 `;
+
+
 
 export default Header;

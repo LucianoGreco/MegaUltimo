@@ -8,32 +8,24 @@ import "@fontsource/montserrat"; // Fuente para textos secundarios
 
 const GlobalStyles = createGlobalStyle`
 
-/* ---------------> Variables globales <-------------- */
-// GENERICO ❌❌❌❌❌
    :root {
-    --text-color:             #fff ;
-    --hover-background-color: rgba(255, 255, 255, 0.8);
-    --hover-text-color:       rgba(0, 0, 0, 0.9);
+    --text-color:             rgba(255, 255, 255, 1);
     --background-color:       rgba(0, 0, 0, 0.5);
-    --shadow: 1px 1px 3px     rgba(0, 0, 0, 0.5);
-    --border-radius: 15px;
-  }
 
-// ORIGINAL ⭐⭐⭐⭐⭐
-  //  :root {
-  //   --text-color:             rgba(255, 255, 255, 0.8);
-  //   --hover-background-color: rgba(255, 255, 255, 0.8);
-  //   --hover-text-color:       rgba(0, 0, 0, 0.9);
-  //   --background-color:       rgba(0, 0, 0, 0.3);
-  //   --shadow: 1px 1px 3px     rgba(0, 0, 0, 0.5);
-  //   --border-radius: 15px;
-  // }
+    --hover-text-color:       rgba(0, 0, 0, 0.0);
+    --hover-background-color: rgba(255, 255, 255, 255);
+    
+    // --shadow: 1px 1px 3px     rgba(0, 0, 0, 0.9);
+
+  }
 
 /* --------------> Reset básico <-------------- */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none;
+
   }
 
 
@@ -42,14 +34,12 @@ const GlobalStyles = createGlobalStyle`
     height: 100vh;
     width: 100vw;
     background: url(${backgroundPage.home}) center/cover fixed no-repeat;
-    // background-color:rgb(198, 198, 198);
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-attachment: fixed;
+    background-attachment:  fixed;
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
+    font-size: 8px;
     text-shadow: var(--shadow);
-
   }
 
 
@@ -60,23 +50,19 @@ const GlobalStyles = createGlobalStyle`
 
 
 /* --------------> Estilo de enlaces y botones <-------------- */
-  a {
+  a {  
     background-color: var(--background-color);
     color:            var(--text-color);
-    border-radius:    var(--border-radius);
+    border-radius:    15px;
     font-weight:      bold;
+    border:           1px solid var(--text-color);
     text-decoration:  none;
     padding:          6px 10px;
-    cursor:           pointer;
-    border:           none;
-    backdrop-filter:  blur(10px);
-     transition: background-color 0.3s ease, transform 0.3s ease;
-
-      background-color: var(--background-color);
-  backdrop-filter: blur(10px); /* Añadir desenfoque en el fondo si se desea */
-
-  };
-  a:hover, {
+    cursor: none;
+    transition:       background-color 0.3s ease, transform 0.3s ease;
+    backdrop-filter:  blur(5px); /* Añadir desenfoque en el fondo si se desea */
+ };
+ a:hover, {
     color:            var(--background-color);
     background-color: var(--text-color);
     transform:        scale(1.1);
@@ -89,14 +75,12 @@ const GlobalStyles = createGlobalStyle`
     width: 20px; /* Ajusta el tamaño */
     height: 30px;
     pointer-events: none;
+    cursor-pointer: none;
     z-index: 9999;
-    transform: translate(-50%, -50%);
     transition: transform 0.1s linear;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
   }
   .custom-cursor img {
     width: 100%;

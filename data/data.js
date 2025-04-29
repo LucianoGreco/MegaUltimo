@@ -3,81 +3,85 @@ import { info } from "@/data/pages/gestor";
 
 const data = {
   backgroundPage: backgroundPage.home,
-  /*
-  home
-  novedades
-  melaminas
-  muebles
-  simulador
-  herrajes
-  envios
-  contactos
-  */
+
   secciones: {
-    novedades: {
-      id: 1,
-      name: "novedades",
-      // description: "últimas novedades en Mega Madera",
-      description: "Últimas novedades",
-      image: CardHomeImage.novedades,
-      backgroundPage: backgroundPage.novedades,
-      page: "/novedades",
-      info: info.novedades,
-    },
-    melaminas: {
-      id: 2,
-      name: "melaminas",
-      // description: "placas de melamina de alta calidad",
-      description: "Placas de alta calidad",
-      image: CardHomeImage.melaminas,
-      backgroundPage: backgroundPage.melaminas,
-      page: "/melaminas",
-      info: info.melaminas,
-    },
-    simulador: {
-      id: 3,
-      name: "simulador",
-      // description: "adaptamos tu diseño favorito a  tu hogar",
-      description: "Adaptamos tu diseño",
-      image: CardHomeImage.simulador,
-      backgroundPage: backgroundPage.simulador,
-      page: "/simulador",
-      info: info.simulador,
-    },
-    muebles: {
-      id: 4,
-      name: "muebles",
-      // description: "muebles para cada ambiente",
-      description: "Para cada ambiente",
-      image: CardHomeImage.muebles,
-      backgroundPage: backgroundPage.muebles,
-      page: "/muebles",
-      info: info.muebles,
-    },
     herrajes: {
-      id: 5,
-      name: "herrajes",
-      description: "De alta calidad",
+      id: 1,
+      name: "Herrajes",
+      description: "",
       image: CardHomeImage.herrajes,
       backgroundPage: backgroundPage.herrajes,
       page: "/herrajes",
       info: info.herrajes,
     },
-    envios: {
-      id: 6,
-      name: "envios",
-      // description: "envíos a todo el país",
-      description: "A todo el país",
-      image: CardHomeImage.envios,
-      backgroundPage: backgroundPage.envios,
-      page: "/envios",
-      info: info.envios,
+    melaminas: {
+      id: 2,
+      name: "Melaminas",
+      description: "",
+      image: CardHomeImage.melaminas,
+      backgroundPage: backgroundPage.melaminas,
+      page: "/melaminas",
+      info: info.melaminas,
     },
-    contactos: {
-      id: 7,
-      name: "contactos",
-      // description: "información de contacto",
-      description: "Contactanos",
+    muebles: {
+      id: 3,
+      name: "Muebles",
+      description: "",
+      image: CardHomeImage.muebles,
+      backgroundPage: backgroundPage.muebles,
+      page: "/muebles",
+      info: info.muebles,
+    },
+    revestimiento: {
+      id: 4,
+      name: "Revestimientos",
+      description: "",
+      // image: CardHomeImage.revestimientoPiso,
+      image: CardHomeImage.pisos,
+      backgroundPage: backgroundPage.pisos,
+      page: "/revestimientoPiso",
+      info: info.revestimientoPiso,
+    },
+    // revestimientoPared: {
+    //   id: 5,
+    //   name: "Revestimiento Pared",
+    //   description: "",
+    //   image: CardHomeImage.pared,
+    //   backgroundPage: backgroundPage.pared,
+    //   page: "/revestimientoPared",
+    //   info: info.revestimientoPared,
+    // },
+    simulador: {
+      id: 6,
+      name: "Simulador",
+      description: "",
+      image: CardHomeImage.simulador,
+      backgroundPage: backgroundPage.simulador,
+      page: "/simulado",
+      info: info.simulador,
+    },
+    // viniloMuebles: {
+    //   id: 7,
+    //   name: "Vinilo Muebles y Decoracion",
+    //   description: "",
+    //   image: CardHomeImage.vinilomuebles,
+    //   backgroundPage: backgroundPage.vinilomuebles,
+    //   page: "/viniloMuebles",
+    //   info: info.viniloMuebles,
+    // },
+    viniloParaVidrios: {
+      id: 8,
+      name: "Vinilo para Vidrios",
+      description: "",
+      image: CardHomeImage.vinilovidrios,
+      backgroundPage: backgroundPage.vinilovidiros,
+      page: "/viniloParaVidrios",
+      info: info.viniloParaVidrios,
+    },
+    contacto: {
+      id: 9,
+      name: "Contactos",
+      description: "",
       image: CardHomeImage.contactos,
       backgroundPage: backgroundPage.contactos,
       page: "/contactos",

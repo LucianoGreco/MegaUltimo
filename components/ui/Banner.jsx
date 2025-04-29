@@ -81,17 +81,12 @@ const StyledButton = styled(Link)`
   text-transform: uppercase;
   text-decoration: none;
   backdrop-filter: blur(8px);
-
-  // border-radius: 30px;
-  // color: #fff;
   font-weight: bold;
   padding: 12px 24px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    // background-color: rgba(0, 0, 0, 0.8);
     transform: scale(1.1);
   }
 

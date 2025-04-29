@@ -3,13 +3,13 @@ import {imagenLogo} from "../image/imagenes"
 const contactos = {
       nombreEmpresa: "Mega Madera",
       direccion: {
-        calle: "Av. Moreno 1455",
+        calle: "Entre Rios 680",
         localidad: "San Rafael",
         provincia: "Mendoza",
         pais: "Argentina",
       },
-      telefono: "+54 260 4422505",
-      correo: "contacto@megamadera.com",
+      telefono: "+54 260 331727",
+      correo: "ferrelucferreteria@gmail.com",
       horarios: {
         mañana: {
           apertura: "08:00",
